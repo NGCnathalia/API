@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000
 app.use(cors())
 app.use(exress.json())
 
-// app.use('/api/1.0', require('./app/routes'))
+app.use('/api/1.0', require('./app/routes'))
 
 dbConnect()
 app.listen(PORT, () => {
